@@ -1,0 +1,155 @@
+/* GENERAL CSS */
+
+:root {
+    --color-bg: #ffffff;
+    --dark-color: #333333;
+    --light-color: #eeeeee;
+    --color-text: #eeeeee;
+    --primary-color: #27a320;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+html {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+html::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h1,
+h2 {
+    font-weight: normal;
+    margin: 0.5rem;
+}
+
+p {
+    margin-top: 1rem;
+}
+
+.website-link {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    display: block;
+}
+
+/* SPECIFIC */
+
+.title {
+    text-align: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: url("./logo.svg") no-repeat center;
+    background-color: var(--primary-color);
+    background-size: auto 100%;
+}
+
+.title h1, .title h2 {
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+.title h1 {
+    font-size: 10vw;
+}
+
+.title h2 {
+    font-size: 4vw;
+}
+
+a:link,
+a:visited,
+a:active {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.project {
+    display: flex;
+    justify-content: space-between;
+    height: 70vh;
+    padding: 20px;
+}
+
+.about-us {
+    @apply content-container
+    display: flex;
+    width: 100%;
+    text-align: center;
+    align-self: center;
+}
+
+.project * {
+    margin-left: 0px;
+}
+
+.project.light-right {
+    @apply project;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+
+.project.dart-left {
+    @apply project;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+
+    flex-direction: row-reverse;
+}
+
+.project.light-right .content-container {
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+    align-items: left;
+}
+
+.project.dart-left .content-container {
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+    text-align: left;
+}
+
+.project .description {
+    text-align: justify;
+}
+
+.project img {
+    height: auto; 
+}
+
+.project.light-right img {
+    margin-left: 50px;
+}
+
+.project.dart-left img {
+    margin-right: 50px;
+}
+
