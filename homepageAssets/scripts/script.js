@@ -25,7 +25,7 @@ const pageSections = [
     }),
     new Project({
         name: "Piano",
-        url: "https://naltonsoftware.com/piano",
+        url: "https://calbabreaker.github.io/piano/",
         githubUrl: "https://github.com/Calbabreaker/piano",
         description: `
             <p>
