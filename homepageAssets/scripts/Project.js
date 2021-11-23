@@ -14,7 +14,9 @@ class Project extends PageSection {
     }
 
     createExternLink(faIconName, url) {
-        return `<a class="fab fa-${faIconName} fa-2x" href="${url}" target="_blank"></a>`
+        return `<a href="${url}" target="_blank">
+            <i class="fab fa-${faIconName} fa-2x"></i>
+            &emsp;View source on GitHub</a>`
     }
 
     drawContent(rowTheme) {
@@ -27,12 +29,16 @@ class Project extends PageSection {
             <div class="content-container">
                 <h2>${this.project.name}</h2>
 
-                ${extraLinks}
+                <br />
 
                 <a href="${this.project.url}" class="website-link" target="_blank">
                     ${this.project.url}
                     <i class="fas fa-external-link-alt"></i>
                 </a>
+
+                <br />
+
+                ${extraLinks}
 
                 <div class="description">
                     ${this.project.description}

@@ -1,3 +1,9 @@
 [submodule "minesweeper"]
 	path = minesweeper
 	url = https://github.com/that-cool-coder/minesweeper
+[submodule "boids"]
+	path = boids
+	url = https://github.com/that-cool-coder/boids
+[submodule "snake"]
+	path = snake
+	url = https://github.com/that-cool-coder/snake
