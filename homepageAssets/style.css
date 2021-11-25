@@ -25,11 +25,11 @@ body {
 }
 
 html {
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
 }
-html::-webkit-scrollbar { 
-    display: none;  /* Safari and Chrome */
+html::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
 }
 
 h1 {
@@ -69,7 +69,8 @@ p {
     background-size: auto 100%;
 }
 
-.title h1, .title h2 {
+.title h1,
+.title h2 {
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
@@ -117,7 +118,7 @@ a:hover {
     color: var(--light-color);
 }
 
-.project.dart-left {
+.project.dark-left {
     @apply project;
     background-color: var(--light-color);
     color: var(--dark-color);
@@ -131,7 +132,7 @@ a:hover {
     align-items: left;
 }
 
-.project.dart-left .content-container {
+.project.dark-left .content-container {
     margin-top: 4vw;
     margin-bottom: 4vw;
     text-align: left;
@@ -142,14 +143,44 @@ a:hover {
 }
 
 .project img {
-    height: auto; 
+    height: auto;
 }
 
 .project.light-right img {
     margin-left: 50px;
 }
 
-.project.dart-left img {
+.project.dark-left img {
     margin-right: 50px;
 }
 
+.scroll-prompt {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    bottom: 10px;
+}
+
+.scroll-prompt path {
+    animation-name: scroll;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+    animation-iteration-count: infinite;
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 0;
+        transform: translateY(-45px);
+    }
+    50% {
+        transform: translateY(-15px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(15px);
+        opacity: 0;
+    }
+}

@@ -1,7 +1,7 @@
 class PageSection {
     static RowTheme = {
-        Light : 0,
-        Dark : 1
+        Light: 0,
+        Dark: 1,
     };
 
     constructor() {
@@ -10,7 +10,9 @@ class PageSection {
 
     draw(rowTheme) {
         var elem = utils.htmlToElement(`
-            <article class="project ${rowTheme == this.RowTheme.Light ? "light-right" : "dart-left"}">
+            <article class="project ${
+                rowTheme == this.RowTheme.Light ? "light-right" : "dark-left"
+            }">
             </article>
         `);
         utils.appendChildrenToNode(elem, this.drawContent(rowTheme));
@@ -19,6 +21,7 @@ class PageSection {
 
     drawContent(rowTheme) {
         // override this. Returns an array of html elements that is inserted into parent
-        return utils.htmlToElements("<p>Empty page section</p>"); 
+        return utils.htmlToElements("<p>Empty page section</p>");
     }
 }
+

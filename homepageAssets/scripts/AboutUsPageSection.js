@@ -3,7 +3,7 @@ class AboutUsPageSection extends PageSection {
         super();
     }
 
-    drawContent(rowTheme) {
+    drawContent() {
         return utils.htmlToElements(`
             <div class="about-us">
                 <h2>We have been producing free and open source software since 2020</h2>
@@ -22,3 +22,4 @@ class AboutUsPageSection extends PageSection {
         `);
     }
 }
+

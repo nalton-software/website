@@ -29,8 +29,7 @@ const pageSections = [
         githubUrl: "https://github.com/Calbabreaker/piano",
         description: `
             <p>
-                Play a fully function piano that has support for midi files and
-                stuff which is pretty cool. 
+                Play a fully functional piano with controls that has support for midi files.
             </p>
             <p>You can also play over the internet with other people by joining a multiplayer room.
         `,
@@ -57,7 +56,7 @@ const pageSections = [
                 A game made made using the Godot engine where you place special and different buildings and generate antimatter to pass through stages.
             </p>
         `,
-        imageName: "anti-flux.png"
+        imageName: "anti-flux.png",
     }),
     new Project({
         name: "Boids simulation",
@@ -82,7 +81,8 @@ const pageSections = [
         `,
         imageName: "snake.png",
     }),
-]
+];
 
 pageSections.forEach(drawPageSection);
 new ScrollPrompt();
+
