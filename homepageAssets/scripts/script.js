@@ -25,7 +25,7 @@ const pageSections = [
     }),
     new Project({
         name: "Piano",
-        url: "https://calbabreaker.github.io/piano/",
+        url: "https://calbabreaker.github.io/piano",
         githubUrl: "https://github.com/Calbabreaker/piano",
         description: `
             <p>
@@ -38,7 +38,7 @@ const pageSections = [
     }),
     new Project({
         name: "Minesweeper",
-        url: "https://naltonsoftware.com/minesweeper/",
+        url: "https://naltonsoftware.com/minesweeper",
         githubUrl: "https://github.com/that-cool-coder/minesweeper",
         description: `
             <p>
@@ -49,8 +49,19 @@ const pageSections = [
         imageName: "minesweeper.png",
     }),
     new Project({
+        name: "Anti-Flux Game",
+        url: "https://calbabreaker.github.io/anti-flux",
+        githubUrl: "https://github.com/calbabreaker/anti-flux",
+        description: `
+            <p>
+                A game made made using the Godot engine where you place special and different buildings and generate antimatter to pass through stages.
+            </p>
+        `,
+        imageName: "anti-flux.png"
+    }),
+    new Project({
         name: "Boids simulation",
-        url: "https://naltonsoftware.com/boids/",
+        url: "https://naltonsoftware.com/boids",
         githubUrl: "https://github.com/that-cool-coder/boids",
         description: `
             <p>
@@ -61,7 +72,7 @@ const pageSections = [
     }),
     new Project({
         name: "Snake game",
-        url: "https://naltonsoftware.com/snake/",
+        url: "https://naltonsoftware.com/snake",
         githubUrl: "https://github.com/that-cool-coder/snake",
         description: `
             <p>
