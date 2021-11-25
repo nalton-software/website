@@ -16,7 +16,7 @@ class Project extends PageSection {
     createExternLink(faIconName, url) {
         return `<a href="${url}" target="_blank">
             <i class="fab fa-${faIconName} fa-2x"></i>
-            &emsp;View source on GitHub</a>`
+            &ensp;View source on GitHub</a>`
     }
 
     drawContent(rowTheme) {
