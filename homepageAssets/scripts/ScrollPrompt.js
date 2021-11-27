@@ -16,7 +16,7 @@ class ScrollPrompt {
 
         this.svg.addEventListener("click", () => {
             window.scroll({
-                top: 1000,
+                top: window.innerHeight,
                 behavior: "smooth",
             });
         });
@@ -26,4 +26,3 @@ class ScrollPrompt {
         });
     }
 }
-
