@@ -22,14 +22,7 @@ body {
     font-family: "Open Sans", sans-serif;
     background-color: var(--color-bg);
     color: var(--color-text);
-}
-
-html {
-    -ms-overflow-style: none; /* Internet Explorer 10+ */
-    scrollbar-width: none; /* Firefox */
-}
-html::-webkit-scrollbar {
-    display: none; /* Safari and Chrome */
+    overflow: overlay;
 }
 
 h1 {
@@ -43,7 +36,6 @@ h2 {
 h1,
 h2 {
     font-weight: normal;
-    margin: 0.5rem;
 }
 
 p {
@@ -57,6 +49,28 @@ p {
 }
 
 /* SPECIFIC */
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    opacity: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1f7119;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #186115;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #154912;
+}
 
 .title {
     text-align: center;
@@ -93,65 +107,65 @@ a:hover {
     text-decoration: underline;
 }
 
-.project {
+section {
     display: flex;
     justify-content: space-between;
     height: 70vh;
     padding: 20px;
 }
 
-.about-us {
-    @apply content-container
-    display: flex;
-    width: 100%;
-    text-align: center;
-    align-self: center;
-}
-
-.project * {
-    margin-left: 0px;
-}
-
-.project.light-right {
-    @apply project;
-    background-color: var(--dark-color);
-    color: var(--light-color);
-}
-
-.project.dark-left {
-    @apply project;
-    background-color: var(--light-color);
-    color: var(--dark-color);
-
-    flex-direction: row-reverse;
-}
-
-.project.light-right .content-container {
+section .content-container {
     margin-top: 4vw;
     margin-bottom: 4vw;
     align-items: left;
 }
 
-.project.dark-left .content-container {
-    margin-top: 4vw;
-    margin-bottom: 4vw;
-    text-align: left;
-}
-
-.project .description {
+section .description {
     text-align: justify;
 }
 
-.project img {
+section img {
     height: auto;
 }
 
-.project.light-right img {
+section .fa {
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+
+section:nth-child(odd) {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+
+section:nth-child(odd) img {
     margin-left: 50px;
 }
 
-.project.dark-left img {
+section:nth-child(even) {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    flex-direction: row-reverse;
+}
+
+section:nth-child(even) img {
     margin-right: 50px;
+}
+
+.about-us {
+    padding-top: 6rem;
+    display: block;
+    width: 100%;
+    text-align: center;
+    align-self: center;
+}
+
+.about-us h2 {
+    margin-bottom: 2rem;
+}
+
+.about-us p {
+    margin-top: 3rem;
 }
 
 .scroll-prompt {

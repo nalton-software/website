@@ -3,10 +3,8 @@ class ScrollPrompt {
     fadeOutScrollAmount = 150; // fade out completely at this scroll amount
 
     constructor() {
-        const html = `<object data="${this.svgSource}"></object>`;
-        this.objectSVG = utils.htmlToElement(html);
+        this.objectSVG = createAppend(`<object data="${this.svgSource}"></object>`);
         this.objectSVG.onload = () => this.onload();
-        document.body.appendChild(this.objectSVG);
     }
 
     onload() {
@@ -21,8 +19,11 @@ class ScrollPrompt {
             });
         });
 
-        document.addEventListener("scroll", () => {
-            this.svg.style.opacity = Math.max(0, 1 - window.scrollY / this.fadeOutScrollAmount);
-        });
+        document.addEventListener("scroll", () => this.calcFade());
+        this.calcFade();
+    }
+
+    calcFade() {
+        this.svg.style.opacity = Math.max(0, 1 - window.scrollY / this.fadeOutScrollAmount);
     }
 }
