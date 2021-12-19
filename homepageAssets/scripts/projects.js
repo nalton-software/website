@@ -67,7 +67,7 @@ const projects = [
         githubUrl: "https://github.com/that-cool-coder/snake",
         description: `
             <p>
-                A very simple snake game that's fun to play, and quicker to load and less fiddly than using other implementations online. Coded with wrk.js (now replaced with spnr.js) and p5.js.
+                A very simple snake game that's fun to play, and quicker to load and less fiddly than using other implementations online. Coded with spnr.js and p5.js.
             </p>
             <p>Currently it only has the basic game mode but in future more may be added.</p>
         `,
