@@ -1,20 +1,5 @@
 const projects = [
     {
-        name: "Is It Rick?",
-        url: "https://naltonsoftware.com/is-it-rick",
-        githubUrl: "https://github.com/That-Cool-Coder/is-it-rick",
-        description: `
-            <p>
-                Rick roll detector that is very nice write some more stuff here. This
-                detects rick rolls and stuff which is cool I guess. It was made using
-                technology created by people yes. Works with magical essence of the many
-                seas.
-            </p>
-            <p>Seas are many and seas cannot be seens.</p>
-        `,
-        imageName: "is-it-rick.png",
-    },
-    {
         name: "Piano",
         url: "https://calbabreaker.github.io/piano",
         githubUrl: "https://github.com/Calbabreaker/piano",
@@ -27,16 +12,29 @@ const projects = [
         imageName: "piano.png",
     },
     {
-        name: "Minesweeper",
-        url: "https://naltonsoftware.com/minesweeper",
-        githubUrl: "https://github.com/that-cool-coder/minesweeper",
+        name: "Is It Rick?",
+        url: "https://naltonsoftware.com/is-it-rick",
+        githubUrl: "https://github.com/That-Cool-Coder/is-it-rick",
         description: `
             <p>
-                A modern lightweight JavaScript recreation of the classic minesweeper game. 
+                Rick roll detector where users can submit Rick roll urls which are verified by admins later.
             </p>
-            <p>It is not fully finished but it's still playable</p>
+            <p>Coded using Python + flask</p>
         `,
-        imageName: "minesweeper.png",
+        imageName: "is-it-rick.png",
+    },
+    {
+        name: "Snake game",
+        url: "https://naltonsoftware.com/snake",
+        githubUrl: "https://github.com/that-cool-coder/snake",
+        description: `
+            <p>
+                A lightweight, extensible snake implementation written wholly in JavaScript. Has faster load times and a cleaner experience than other implementations. Coded with spnr.js and p5.js.
+            </p>
+            <p>In addition to the original game mode, it has several additional variants and some AI demonstrations.</p>
+            <p>Community contributions of new game modes are welcome and are mostly not difficult to make. Contributions are done through GitHub pull requests.
+        `,
+        imageName: "snake.png",
     },
     {
         name: "Anti-Flux Game",
@@ -62,15 +60,15 @@ const projects = [
         imageName: "boids.png",
     },
     {
-        name: "Snake game",
-        url: "https://naltonsoftware.com/snake",
-        githubUrl: "https://github.com/that-cool-coder/snake",
+        name: "Minesweeper",
+        url: "https://naltonsoftware.com/minesweeper",
+        githubUrl: "https://github.com/that-cool-coder/minesweeper",
         description: `
             <p>
-                A very simple snake game that's fun to play, and quicker to load and less fiddly than using other implementations online. Coded with spnr.js and p5.js.
+                A modern lightweight JavaScript recreation of the classic minesweeper game. 
             </p>
-            <p>Currently it only has the basic game mode but in future more may be added.</p>
+            <p>It is not fully finished but it's still playable</p>
         `,
-        imageName: "snake.png",
+        imageName: "minesweeper.png",
     },
 ];
