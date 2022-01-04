@@ -13,10 +13,7 @@ class ScrollPrompt {
         this.svg.classList.add("scroll-prompt");
 
         this.svg.addEventListener("click", () => {
-            window.scroll({
-                top: window.innerHeight,
-                behavior: "smooth",
-            });
+            window.scroll(0, window.innerHeight);
         });
 
         document.addEventListener("scroll", () => this.calcFade());

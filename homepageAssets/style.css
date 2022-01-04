@@ -23,6 +23,11 @@ body {
     background-color: var(--color-bg);
     color: var(--color-text);
     overflow: overlay;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 h1 {
@@ -52,7 +57,11 @@ p {
 
 /* custom scrollbar */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar:active {
+    width: 0.75rem;
 }
 
 ::-webkit-scrollbar-track {
@@ -110,7 +119,6 @@ a:hover {
 section {
     display: flex;
     justify-content: space-between;
-    height: 70vh;
     padding: 20px;
 }
 
@@ -120,17 +128,18 @@ section .content-container {
     align-items: left;
 }
 
+.content-container .fa {
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+
 section .description {
     text-align: justify;
 }
 
 section img {
     height: auto;
-}
-
-section .fa {
-    margin-right: 1rem;
-    margin-top: 1rem;
+    max-height: 70vh;
 }
 
 section:nth-child(odd) {
@@ -152,8 +161,20 @@ section:nth-child(even) img {
     margin-right: 50px;
 }
 
+@media screen and (max-width: 800px) {
+    section {
+        display: block;
+    }
+
+    section img {
+        margin-left: 0 !important;
+        max-height: 50vh;
+    }
+}
+
 .about-us {
     padding-top: 6rem;
+    padding-bottom: 6rem;
     display: block;
     width: 100%;
     text-align: center;
@@ -166,6 +187,16 @@ section:nth-child(even) img {
 
 .about-us p {
     margin-top: 3rem;
+}
+
+.about-us a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-us a i {
+    margin-right: 1rem;
 }
 
 .scroll-prompt {

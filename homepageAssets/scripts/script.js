@@ -17,9 +17,9 @@ const sectionContainer = document.getElementById("section-container");
 createAppend(`
     <section class="about-us">
         <h2>We have been producing free and open source software since 2020</h2>
-        <a href="https://github.com/nalton-software/">
+        <a href="https://github.com/nalton-software/" target="_blank">
             <i class="fa fa-github fa-2x"></i>
-            &emsp;View the source code for our projects on GitHub
+            <span>View the source code for our projects on GitHub</span>
         </a>
         <p>We use Arch, BTW</p>
     </section>`,
