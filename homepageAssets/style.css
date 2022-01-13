@@ -118,14 +118,14 @@ a:hover {
 
 section {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 20px;
 }
 
 section .content-container {
     margin-top: 4vw;
     margin-bottom: 4vw;
-    align-items: left;
+    width: 32rem;
 }
 
 .content-container .fa {

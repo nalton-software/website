@@ -1,7 +1,7 @@
 const projects = [
     {
         name: "Piano",
-        url: "https://calbabreaker.github.io/piano",
+        url: "https://naltonsoftware.com/piano",
         githubUrl: "https://github.com/Calbabreaker/piano",
         description: `
             <p>

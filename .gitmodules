@@ -7,3 +7,7 @@
 [submodule "snake"]
 	path = snake
 	url = https://github.com/that-cool-coder/snake
+[submodule "piano"]
+	path = piano
+	url = https://github.com/Calbabreaker/piano
+	shallow = true
